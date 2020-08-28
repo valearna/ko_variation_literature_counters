@@ -32,4 +32,6 @@ yarn-debug.log*
 yarn-error.log*
 
 package-lock.json
-results.txt
+results/*
+
+*.xml.gz
