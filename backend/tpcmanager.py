@@ -89,8 +89,8 @@ class TPCManager(object):
             list: the documents matching the query
         """
         data = json.dumps({"token": self.textpresso_api_token, "query": {
-            "keywords": " ".join(keywords), "type": "document", "corpora": ["C. elegans"], "since_num": start,
-            "count": count, "case_sensitive": True}})
+            "keywords": " ".join(keywords), "type": "document", "corpora": ["C. elegans"], "case_sensitive": True},
+            "count": count, "since_num": start})
         data = data.encode('utf-8')
         req = urllib.request.Request(self.tpc_api_endpoint, data, headers={'Content-type': 'application/json',
                                                                            'Accept': 'application/json'})
