@@ -15,4 +15,4 @@ ENV PYTHONPATH=$PYTHONPATH:/usr/src/app/
 
 EXPOSE ${PORT}
 
-CMD python3 backend/api.py -H ${EMAIL_HOST} -p ${EMAIL_PORT} -u "${EMAIL_USER}" -w ${EMAIL_PASSWD} -t ${TPC_TOKEN}
+CMD python3 backend/api.py -H ${EMAIL_HOST} -p ${EMAIL_PORT} -u "${EMAIL_USER}" -w ${EMAIL_PASSWD} -t ${TPC_TOKEN} -P ${PORT}
